@@ -2,19 +2,19 @@ var config = {};
 
 // self explanatory, your application name, descriptions, etc
 config.appName = 'WalletShell';
-config.appDescription = 'TurtleCoin Wallet';
-config.appSlogan = 'Slow and steady wins the race!';
-config.appId = 'lol.turtlecoin.walletshell';
-config.appGitRepo = 'https://github.com/turtlecoin/turtle-wallet-electron';
+config.appDescription = 'BitcoinHekaton Wallet';
+config.appSlogan = 'The new Bitcoin!';
+config.appId = 'com.bitcoinhekaton.www';
+config.appGitRepo = 'https://bitcoinhekaton.com';
 
-// default port number for your daemon (e.g. TurtleCoind)
-config.daemonDefaultRpcPort = 11898;
+// default port number for your daemon (e.g. hekatond)
+config.daemonDefaultRpcPort = 19812;
 
 // wallet file created by this app will have this extension
-config.walletFileDefaultExt = 'twl';
+config.walletFileDefaultExt = 'btch';
 
 // change this to match your wallet service executable filename
-config.walletServiceBinaryFilename = 'turtle-service';
+config.walletServiceBinaryFilename = 'hekaton-service';
 
 // version on the bundled service (turtle-service)
 config.walletServiceBinaryVersion = "v0.10.0";
@@ -24,31 +24,30 @@ config.walletServiceBinaryVersion = "v0.10.0";
 // json --> for turtle service (or its forks) version >= v0.8.4
 config.walletServiceConfigFormat = "json";
 
-// default port number for your wallet service (e.g. turtle-service)
-config.walletServiceRpcPort = 8070;
+// default port number for your wallet service (e.g. hekaton-service)
+config.walletServiceRpcPort = 19814;
 
 // block explorer url, the [[TX_HASH]] will be substituted w/ actual transaction hash
-config.blockExplorerUrl = 'https://turtle.land/?hash=[[TX_HASH]]#blockchain_transaction';
+config.blockExplorerUrl = 'null';
 
 // default remote node to connect to, set this to a known reliable node for 'just works' user experience
-config.remoteNodeDefaultHost = 'nodes.hashvault.pro';
+config.remoteNodeDefaultHost = '54.183.84.20';
 
 // remote node list update url, set to null if you don't have one
-config.remoteNodeListUpdateUrl = 'https://raw.githubusercontent.com/turtlecoin/turtlecoin-nodes-json/master/turtlecoin-nodes.json';
+config.remoteNodeListUpdateUrl = 'null';
 
 // fallback remote node list, in case fetching update failed, fill this with known to works remote nodes
 config.remoteNodeListFallback = [
-    'nodes.hashvault.pro:11898',
-    'public.turtlenode.io:11898',
-    'public.turtlenode.net:11898',
+    '54.183.84.20:19812',
+    '13.112.231.16:19812',
 ];
 
 // your currency name
-config.assetName = 'TurtleCoin';
+config.assetName = 'BitcoinHekaton';
 // your currency ticker
-config.assetTicker =  'TRTL';
+config.assetTicker =  'BTCH';
 // your currency address prefix, for address validation
-config.addressPrefix =  'TRTL';
+config.addressPrefix =  'BTCH';
 // standard wallet address length, for address validation
 config.addressLength = 99;
 // intergrated wallet address length, for address validation
@@ -72,16 +71,16 @@ config.addressBookObfuscateEntries = true;
 config.addressBookObfuscationKey = '79009fb00ca1b7130832a42de45142cf6c4b7f333fe6fba5';
 // initial/sample entries to fill new address book
 config.addressBookSampleEntries = [
-    { name: 'labaylabay',
-      address: 'TRTLv1A26ngXApin33p1JsSE9Yf6REj97Xruz15D4JtSg1wuqYTmsPj5Geu2kHtBzD8TCsfd5dbdYRsrhNXMGyvtJ61AoYqLXVS',
-      paymentId: 'DF794857BC4587ECEC911AF6A6AB02513FEA524EC5B98DA8702FAC92195A94B2', 
-    },
-    { name: 'Macroshock',
-      address: 'TRTLv3R17LWbVw8Qv4si2tieyKsytUfKQXUgsmjksgrgJsTsnhzxNAeLKPjsyDGF7HGfjqkDegu2LPaC5NeVYot1SnpfcYmjwie',
+    { name: 'kiyoto',
+      address: 'btchv1A26ngXApin33p1JsSE9Yf6REj97Xruz15D4JtSg1wuqYTmsPj5Geu2kHtBzD8TCsfd5dbdYRsrhNXMGyvtJ61AoYqLXVS',
       paymentId: '', 
     },
-    { name: 'RockSteady',
-      address: 'TRTLuxEnfjdF46cBoHhyDtPN32weD9fvL43KX5cx2Ck9iSP4BLNPrJY3xtuFpXtLxiA6LDYojhF7n4SwPNyj9M64iTwJ738vnJk',
+    { name: 'Tomioka',
+      address: 'btchv3R17LWbVw8Qv4si2tieyKsytUfKQXUgsmjksgrgJsTsnhzxNAeLKPjsyDGF7HGfjqkDegu2LPaC5NeVYot1SnpfcYmjwie',
+      paymentId: '', 
+    },
+    { name: 'Sakamoto',
+      address: 'btchuxEnfjdF46cBoHhyDtPN32weD9fvL43KX5cx2Ck9iSP4BLNPrJY3xtuFpXtLxiA6LDYojhF7n4SwPNyj9M64iTwJ738vnJk',
       paymentId: '', 
     }
 ];
