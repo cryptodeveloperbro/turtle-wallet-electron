@@ -1,10 +1,10 @@
 {
   "name": "walletshell",
   "productName": "WalletShell",
-  "description": "TurtleCoin GUI Wallet",
+  "description": "BitcoinHekaton GUI Wallet",
   "version": "v0.3.6",
-  "homepage": "https://github.com/turtlecoin/turtle-wallet-electron",
-  "repository": "https://github.com/turtlecoin/turtle-wallet-electron",
+  "homepage": "https://www.bitcoinhekaton.com",
+  "repository": "https://www.bitcoinhekaton.com",
   "main": "main.js",
   "scripts": {
     "start": "electron .",
@@ -15,7 +15,7 @@
     "dist-mac": "./node_modules/.bin/electron-builder --x64 --mac -c.extraResources=./bin/osx/turtle-service"
   },
   "keywords": [],
-  "author": "Rixombea, Macroshock, TurtleCoin Developers",
+  "author": "Kiyoto Tomioka Bitcoin Hekaton Developers",
   "license": "ISC",
   "devDependencies": {
     "devtron": "^1.4.0",
@@ -33,8 +33,8 @@
     "request-promise-native": "^1.0.5"
   },
   "build": {
-    "appId": "lol.turtlecoin.walletshell",
-    "copyright": "Copyright (c) 2018 Rixombea, Macroshock, TurtleCoin Developers",
+    "appId": "com.bitcoinhekaton.www",
+    "copyright": "Copyright (c) 2018-3019, Bitcoin Hekaton Developers",
     "directories": {
       "output": "dist",
       "buildResources": "build"
@@ -64,14 +64,14 @@
       "target": [
         "AppImage"
       ],
-      "maintainer": "rixombea (@labaylabay)",
+      "maintainer": "jerrygomez (@jerrygomez)",
       "category": "Office",
-      "vendor": "TurtleCoin",
-      "synopsis": "TurtleCoin GUI Wallet"
+      "vendor": "HekatonCoin",
+      "synopsis": "Hekaton GUI Wallet",
     },
     "win": {
       "target": "nsis",
-      "publisherName": "TurtleCoin"
+      "publisherName": "BitcoinHekaton"
     },
     "nsis": {
       "artifactName": "${productName}-v${version}-${os}-${arch}-setup.${ext}",
